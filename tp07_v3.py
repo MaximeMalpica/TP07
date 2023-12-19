@@ -5,7 +5,7 @@ class Fraction:
     """Class representing a fraction and operations on it
 
     Author : M. Malpica Arana
-    Date : 12/12/2023
+    Date : 19/12/2023
     This class allows fraction manipulations through several operations.
     """
 
@@ -122,10 +122,10 @@ class Fraction:
 
         PRE : 'other' est une instance de Fraction 
         POST : Renvoie une nouvelle fraction représentant la division des deux fractions
-        RAISES : ZeroDivisionError si 'numerator' est nul
+        RAISES : ZeroDivisionError si 'denominator' est nul
         """
 
-        if other.numerator == 0:
+        if other.denominator == 0:
             raise ZeroDivisionError("La division par zéro n'est pas autorisée.")
         other = self.is_fraction(other)
         div_num = self.numerator * other.denominator
